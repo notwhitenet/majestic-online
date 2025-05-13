@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic RP・Online</title>
+    <script src="eel.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="favicom.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div class="title-bar">
+        <button id="minimize-button" class="window-button">_</button>
+        <button id="close-button" class="window-button">&times;</button>
+    </div>
+    <div class="background">
+        <div class="blur-circle"></div>
+        <div class="blur-circle"></div>
+        <div class="blur-circle"></div>
+    </div>
+    <div class="container">
+        <h1>Majestic RP・Online</h1>
+    </div>
+    <div class="container-server">
+        <div class="majestic1 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(1)・NewYork
+            </div>
+            <div class="majestic1-online" id="majestic1-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic2 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(2)・Detroit
+            </div>
+            <div class="majestic1-online" id="majestic2-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic3 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(3)・Chicago
+            </div>
+            <div class="majestic1-online" id="majestic3-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic4 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(4)・San Francisco
+            </div>
+            <div class="majestic1-online" id="majestic4-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic5 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(5)・Atlanta
+            </div>
+            <div class="majestic1-online" id="majestic5-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic6 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(6)・San Diego
+            </div>
+            <div class="majestic1-online" id="majestic6-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic7 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(7)・Los Angeles
+            </div>
+            <div class="majestic1-online" id="majestic7-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic8 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(8)・Miami
+            </div>
+            <div class="majestic1-online" id="majestic8-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic9 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(9)・Las Vegas
+            </div>
+            <div class="majestic1-online" id="majestic9-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic10 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(10)・Washington
+            </div>
+            <div class="majestic1-online" id="majestic10-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic11 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(11)・Dallas
+            </div>
+            <div class="majestic1-online" id="majestic11-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic12 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(12)・Boston
+            </div>
+            <div class="majestic1-online" id="majestic12-online">
+                Online: 0/5000
+            </div> 
+        </div>
+        <div class="majestic13 servers">
+            <div class="majestic1-name nameserver">
+                Majestic(13)・Houston
+            </div>
+            <div class="majestic1-online" id="majestic13-online">
+                Online: 0/5000
+            </div> 
+        </div>
+    </div>
+
+    <!-- окно -->
+    <div id="server-modal" class="server-modal">
+        <div class="server-modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="server-name">Название сервера</h2>
+            <p id="server-details">Детали сервера...</p>
+            <p id="queue-count">Очередь: 0</p>
+            <p id="availability-status">Доступен: Да</p>
+            
+            <!-- кнопка и форма  -->
+            <button id="add-info-button">Добавить информацию</button>
+            <div id="character-info" style="display: none;">
+                <div class="character">
+                    <label>Персонаж 1:</label>
+                    <input type="text" placeholder="Static ID" id="char1-id">
+                    <input type="text" placeholder="Банк счет" id="char1-bank">
+                </div>
+                <div class="character">
+                    <label>Персонаж 2:</label>
+                    <input type="text" placeholder="Static ID" id="char2-id">
+                    <input type="text" placeholder="Банк счет" id="char2-bank">
+                </div>
+                <div class="character">
+                    <label>Персонаж 3:</label>
+                    <input type="text" placeholder="Static ID" id="char3-id">
+                    <input type="text" placeholder="Банк счет" id="char3-bank">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="hover-sound" src="select.mp3" preload="auto"></audio>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "majestic-online",
+  "productName": "Majestic RP・Online",
+  "version": "1.0.4",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "25.0.0",
+    "electron-builder": "23.0.0"
+  },
+  "build": {
+    "appId": "com.yourcompany.yourapp",
+    "win": {
+      "target": "nsis",
+      "icon": "web/favicom.png"
+    },
+    "files": [
+      "main.js",
+      "web/**/*",
+      "node_modules/**/*",
+      "package.json"
+    ]
+  }
+}
