@@ -32,3 +32,7 @@ npm install --save-dev @electron-forge/cli
 npx electron-forge import
 npm run make
 ```
+
+![image](https://github.com/user-attachments/assets/161a634a-e3b2-4af3-ba6a-f459a88cd5d5)
+
+![image](https://github.com/user-attachments/assets/f8a798f4-8da0-4ac8-9a72-2db845d7e6a2)
